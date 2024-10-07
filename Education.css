@@ -1,0 +1,363 @@
+
+.start{
+   background-image: url(images/gra1.jpeg);
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.cover{
+   color: white;
+   padding-top: 2%;
+   padding-left: 5%;
+   padding-bottom: 5%;
+}
+.best{
+   font-weight: 900;
+   font-size: x-large;
+   font-family: "Nunito",sans-serif;
+   color: green;
+   text-align: center;
+}
+.platform{
+   font-weight: 1000;
+   font-size: 60px;
+   font-family: "Nunito",sans-serif;
+   text-align: center;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.platform3{
+   font-weight: 1000;
+   font-size: 60px;
+   font-family: "Nunito",sans-serif;
+   text-align: center;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.platform2{
+   font-weight: 1000;
+   font-size: 40px;
+   font-family: "Nunito",sans-serif;
+   text-align: center;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.lorem{
+   font-size: 20px;
+   font-weight: 600;
+   text-align: center;
+}
+.bn{
+   padding: 10px 30px;
+   background-color: white;
+   border-color: transparent;
+   color: black;
+   border-radius: 5px;
+   font-weight: 600;
+   margin-left: 33%;
+}
+.brn2{
+   padding: 10px 30px;
+   color: white;
+   background-color: green;
+   border-color: transparent;
+   border-radius: 5px;
+}
+.body2{
+   background-image: url(images/bg_1.jpg);
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.cover1{
+   color: white;
+   padding-left: 5%;
+   padding-bottom: 5%;
+   padding-top: 3%;
+}
+.skilled{
+   text-align: center;
+   background-color: #d4ebec;
+   margin-left: 35px;
+   padding: 20px;
+   border-radius: 10px;
+   font-weight: 200;
+}
+.searc{
+   display: flex;
+   margin-top: 6%;
+}
+.welcome{
+   display: flex;
+   margin-left: 20px;
+   font-size: 20px;
+}
+.about{
+   display: flex;
+   margin-top: 6%;
+   margin-left: 5%;
+}
+.sfre{
+   margin-left: 25%;
+   margin-right: 5%;
+}
+.left{
+   margin-left: 20%;
+}
+.black{
+   display: flex;
+   padding: 10px;
+}
+h1{
+   text-align: center;
+   font-size: 40px;
+}
+h2{
+   text-align: center;
+   font-size: 30px;
+}
+.categories{
+   margin-top: 5%;
+}
+.cat{
+   margin-left: 20px;
+}
+.popular{
+   display: flex;
+   text-align: center;
+}
+.cos{
+   margin-left: 40px;
+   background-color: #d4ebec;
+   border-radius: 10px;
+}
+.logo{
+   display: flex;
+   margin-left: 40px;
+}
+nav a{
+   text-decoration: none;
+   font-size: large;
+   position: 30px;
+   margin-left: 50px;
+   color: green;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+   margin-left: 30%;
+   margin-top: 2%;
+}
+.test{
+   margin-left: 50px;
+}
+.testi{
+   border-radius: 50px;
+}
+.lor{
+   background-color: #d4ebec;
+   padding: 15px;
+   border-radius: 8px;
+}
+.gala{
+   display: flex;
+   padding: 5px;
+}
+.link{
+   display: flex;
+   justify-content: space-between;
+   margin-left: 40px;
+   color: white;
+   padding: 50px;
+}
+.quick{
+   background-color: navy;
+   color: white;
+}
+.designed{
+   text-align: center;
+}
+.head{
+   background-color: #d4ebec;
+}
+.icon{
+   font-size: 100px;
+}
+.pop{
+   background-color: blue;
+   color: white;
+   border-color: transparent;
+   padding: 5px 10px;
+   border-radius: 10px;
+   font-weight: 700;
+}
+.pop2{
+   background-color: white;
+   color: black;
+   border-color: transparent;
+   padding: 5px 10px;
+   border-radius: 10px;
+   font-weight: 700;
+}
+.cover .platform,
+.cover .platform2,
+.cover .lorem,
+.cover .bn,
+.cover .brn2{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 1.0s 1s linear 1 forwards;
+}
+@keyframes showContent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+.cover .platform{
+   animation-delay: 1.0s;
+}
+.cover .platform2{
+    animation-delay: 2.0s;
+}
+.cover .lorem{
+    animation-delay: 4.0s;
+}
+.cover .bn{
+    animation-delay: 5.0s;
+}
+.cover .brn2{
+    animation-delay: 6.0s;
+}
+
+
+@media (prefers-reduced-motion: no-preference){
+   .cos,
+   .cat{
+      scale: .1;
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range: entry;
+   }
+}
+@keyframes fade-in{
+    to{
+      opacity: 1;
+      scale: 1;
+    }
+}
+
+@keyframes slideInleft{
+   from{
+      transform: translateX(-300px);
+   }
+   to{
+      transform: translateX(0);
+   }
+}
+.cover1,
+.test{
+   animation-name: slideInleft;
+   animation-duration: 25s;
+   animation-timing-function: ease-in;
+   animation-delay: 5s;
+   animation-iteration-count: infinite;
+   animation-direction: normal;
+   animation-fill-mode: forwards;
+   animation-range: entry 500px;
+}
+.lorem2{
+   font-size: 30px;
+   font-weight: 600;
+   line-height: 50px;
+   text-align: center;
+}
+.us{
+   font-size: 60px;
+   margin-top: 20px;
+}
+.fleft{
+   float: left;
+   padding: 30px;
+}
+.fright{
+   float: right;
+   padding: 30px;
+}
+.bn a{
+   text-decoration: none;
+}
+.click{
+   background-image: url(images/bg_1.jpg);
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.wel{
+   margin-top: 20px;
+   text-align: center;
+   font-weight: 900;
+   font-size: 50px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   line-height: 100px;
+   color: white;
+   text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px darkgreen;
+}
+.com{
+   margin-left: 45%;
+   padding: 10px 30px;
+   color: white;
+   background-color: green;
+   border-color: transparent;
+   border-radius: 5px;
+   margin-bottom: 30px;
+}
+.de{
+   font-size: 65px;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.form{
+   font-size: 20px;
+   text-align: center;
+   margin-top: 5%;
+   color: white;
+   font-weight: 800;
+}
+input{
+   border-radius: 10px;
+   padding: 10px;
+   border-color: white;
+}
+.flex{
+   display: flex;
+   margin-left: 25%;
+}
+.move{
+   background-image: url(images/gra2.jpeg);
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.con{
+   text-align: center;
+   font-weight: 900;
+   font-size: 50px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   line-height: 100px;
+   color: white;
+   text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+   margin-top: 10px;
+}
+.cong{
+   background-image: url(images/carousel-2.jpg);
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.com a{
+   text-decoration: none;
+   color: white;
+}
+.brn2 a{
+   text-decoration: none;
+   color: white;
+}
